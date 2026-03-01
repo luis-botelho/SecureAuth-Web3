@@ -1,0 +1,32 @@
+﻿# Dependências (Nunca suba a pasta node_modules)
+node_modules/
+dist/
+build/
+
+# Variáveis de Ambiente (CRÍTICO para Segurança/SGSI)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Chaves Privadas (Web3/Criptografia)
+*.pem
+*.key
