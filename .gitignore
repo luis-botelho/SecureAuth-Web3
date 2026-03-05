@@ -30,3 +30,5 @@ Thumbs.db
 # Chaves Privadas (Web3/Criptografia)
 *.pem
 *.key
+
+/generated/prisma

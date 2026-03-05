@@ -1,0 +1,17 @@
+// prisma/schema.prisma
+datasource db {
+  provider = "postgresql" // Ou "sqlite" se quiser testar rápido sem instalar nada
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id            String   @id @default(uuid())
+  email         String?  @unique
+  passwordHash  String?
+  walletAddress String?  @unique
+  nonce         String?          // Campo vital para a Web3
+  createdAt     DateTime @default(now())
+}
